@@ -1,18 +1,18 @@
 #container {
     position: absolute;
     margin-top: 70px;
-    margin-left: 50px;
+    margin-left: 20px;
     width: 50%;
     height: 70%;
     top: 15%;
-    left: 55%;
+    left: 45%;
   
   }
   
   body {
     background-image: url('https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=2000');
   }
-  
+
   .body {
     font-family: 'Courier New', Courier, monospace;
     background-repeat: no-repeat;
