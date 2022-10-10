@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
+const port = 5500;
 app.set('view-engine')
 app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
@@ -15,4 +15,6 @@ app.get('/result', (req, res) => {
     res.render('result_page.ejs')
 })
 
-app.listen(3000)
+app.listen(port, () => {
+    console.log(`radarchart listening on port ${port}`)
+})
