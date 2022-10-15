@@ -101,14 +101,12 @@
 
 
     <div class="button-group">
-        <button class="btn btn btn-primary" type="button" id="MyButton">產出雷達圖</button>
-        <button class="btn btn-secondary" type="button" onClick="window.location.reload();">重新產生雷達圖</button>
-        <a target="_blank" rel="noopener noreferrer" href="/page2" class="btn btn btn-dark" id="button">下一個測驗</a>
+        <a target="_blank" rel="noopener noreferrer" type="button" href="/page_result" id="MyButton" class="btn btn btn-primary" id="button">產生結果圖</a>
+        <button class="btn btn-secondary" type="button" onClick="window.location.reload();">清除</button>
         
     </div>
 
 
-    <div id="container"></div>
 
 </body>
 
@@ -202,7 +200,7 @@
         localStorage.setItem('page1_avg4', avg4);
         localStorage.setItem('page1_avg5', avg5);
         //result.textContent = `Avg Score Here:${avg}` ;  
-        anychart.onDocumentReady(function () {
+        /*anychart.onDocumentReady(function () {
             // our data from bulbapedia
             var data1 = [
                 { x: "Dimension1", value: avg1 },
@@ -234,8 +232,8 @@
             // initiate chart drawing
             chart.draw();
 
-        });
-        MyButton.disabled = true;
+        });*/
+        //MyButton.disabled = true;
 
     })
 

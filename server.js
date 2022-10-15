@@ -8,6 +8,9 @@ app.use(express.urlencoded({ extended: true }));
 app.get('/', (req, res) => {
     res.render('index.ejs')
 })
+app.get('/page_result', (req, res) => {
+    res.render('index_result.ejs')
+})
 app.get('/page2', (req, res) => {
     res.render('page2.ejs')
 })
